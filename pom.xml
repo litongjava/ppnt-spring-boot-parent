@@ -1,0 +1,15 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>top.ppnt</groupId>
+  <artifactId>ppnt-spring-boot-parent</artifactId>
+  <version>1.0</version>
+  <packaging>pom</packaging>
+
+  <modules>
+    <module>ppnt-spring-boot-config</module>
+    <module>ppnt-spring-boot-model</module>
+    <module>ppnt-spring-boot-mapper</module>
+    <module>ppnt-spring-boot-utils</module>
+  </modules>
+</project>
