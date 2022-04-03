@@ -29,8 +29,9 @@ public class JwtUtils {
    * @return JWT
    */
   public static String generateTokenExpireInMinutes(Object userInfo, PrivateKey privateKey, int expire) {
+    String string = JsonUtils.toString(userInfo);
     return Jwts.builder()
-      .claim(JWT_PAYLOAD_USER_KEY, JsonUtils.toString(userInfo))
+      .claim(JWT_PAYLOAD_USER_KEY, string)
       .setId(createJTI())
       .setExpiration(DateTime.now().plusMinutes(expire).toDate())
       .signWith(privateKey, SignatureAlgorithm.RS256)
