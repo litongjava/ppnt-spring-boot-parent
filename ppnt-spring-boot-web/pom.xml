@@ -6,7 +6,7 @@
     <artifactId>ppnt-spring-boot-parent</artifactId>
     <version>1.0</version>
   </parent>
-  <artifactId>ppnt-spring-boot-config</artifactId>
+  <artifactId>ppnt-spring-boot-web</artifactId>
   <properties>
     <java.version>1.8</java.version>
     <maven.compiler.source>${java.version}</maven.compiler.source>
@@ -17,9 +17,10 @@
   </properties>
 
   <dependencies>
+
     <dependency>
       <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot</artifactId>
+      <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
     <dependency>
       <groupId>top.ppnt</groupId>

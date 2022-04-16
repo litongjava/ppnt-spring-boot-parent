@@ -11,5 +11,7 @@
     <module>ppnt-spring-boot-model</module>
     <module>ppnt-spring-boot-mapper</module>
     <module>ppnt-spring-boot-utils</module>
+    <module>ppnt-spring-boot-web</module>
+    <module>ppnt-mybatis-plus-extension</module>
   </modules>
 </project>
