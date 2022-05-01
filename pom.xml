@@ -5,13 +5,55 @@
   <artifactId>ppnt-spring-boot-parent</artifactId>
   <version>1.0</version>
   <packaging>pom</packaging>
+  <name>ppnt-spring-boot-parent</name>
+  <description>基于spring-boot的常见类封装</description>
+  <url>http://gitee.com/ppnt</url>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <id>ping-e-lee</id>
+      <name>ping e lee</name>
+      <email>litonglinux@qq.com</email>
+      <url>https://gitee.com/ppnt</url>
+    </developer>
+  </developers>
+
+  <!-- 使用阿里 maven 库 -->
+  <repositories>
+    <repository>
+      <id>ali-maven</id>
+      <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+        <updatePolicy>always</updatePolicy>
+        <checksumPolicy>fail</checksumPolicy>
+      </snapshots>
+    </repository>
+  </repositories>
+
+  <scm>
+    <connection>scm:git:git@github.com:litongjava/ppnt-spring-boot-parent.git</connection>
+    <developerConnection>scm:git:git@github.com:litongjava/ppnt-spring-boot-parent.git</developerConnection>
+    <url>git@github.com:litongjava/ppnt-spring-boot-parent.git</url>
+  </scm>
+
 
   <modules>
+    <module>ppnt-mybatis-plus-extension</module>
     <module>ppnt-spring-boot-config</module>
-    <module>ppnt-spring-boot-model</module>
     <module>ppnt-spring-boot-mapper</module>
+    <module>ppnt-spring-boot-model</module>
     <module>ppnt-spring-boot-utils</module>
     <module>ppnt-spring-boot-web</module>
-    <module>ppnt-mybatis-plus-extension</module>
+    <module>ppnt-spring-boot-component</module>
   </modules>
 </project>
