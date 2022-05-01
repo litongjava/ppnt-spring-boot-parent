@@ -1,23 +1,33 @@
 package top.ppnt.spring.boot.component;
 
 import java.io.File;
+import java.io.OutputStream;
 import java.util.Map;
 import java.util.function.Function;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.apache.commons.io.FilenameUtils;
 import org.ehcache.impl.internal.concurrent.ConcurrentHashMap;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
+import lombok.extern.slf4j.Slf4j;
+
 /**
  * @author Ping E Lee
  *
  */
+@Slf4j
 @Component
 public class DownloadComponent {
 
   @Autowired
   private ResourcesLocationComponent resourcesLocationComponent;
+  @Autowired
+  private ServerServletComponent serverServletComponent;
   // 保存下载路径位置
   private Map<String, String> dowloadPathMap = new ConcurrentHashMap<>();
 
